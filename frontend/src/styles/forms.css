@@ -1,0 +1,99 @@
+/* ============================================
+   FORMS (Generic)
+   ============================================ */
+.form-card {
+    background: var(--bg-card);
+    padding: 36px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition);
+    margin-top: 32px;
+}
+.form-card:hover {
+    box-shadow: var(--shadow-md);
+}
+.form-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: var(--text-primary);
+}
+
+.form-card label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+}
+.form-card input,
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 22px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-input);
+    color: var(--text-primary);
+    font-size: 16px;
+    transition: all var(--transition);
+    outline: none;
+    font-family: inherit;
+}
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    border-color: var(--border-focus);
+    box-shadow: 0 0 0 5px rgba(59, 110, 255, 0.10);
+    background: var(--bg-secondary);
+}
+.form-card textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.form-card .image-upload {
+    margin-bottom: 22px;
+}
+.form-card .image-upload input[type="file"] {
+    padding: 14px;
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-input);
+    cursor: pointer;
+    width: 100%;
+    transition: border var(--transition);
+}
+.form-card .image-upload input[type="file"]:hover {
+    border-color: var(--primary);
+}
+.form-card .preview-container {
+    margin-top: 18px;
+}
+.form-card .preview-container .preview-image {
+    max-width: 240px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-color);
+    margin-bottom: 12px;
+}
+.form-card .btn-submit {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--primary-gradient);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+    letter-spacing: 0.3px;
+}
+.form-card .btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(59, 110, 255, 0.35);
+}
+.form-card .btn-submit:active {
+    transform: translateY(0);
+}
