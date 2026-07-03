@@ -6,7 +6,7 @@ import {
   assignComplaint,
 } from "../../services/adminService";
 
-import Sidebar from "../../components/Sidebar";
+import DashboardLayout from "../../layouts/DashboardLayout";
 import { toast } from "react-toastify";
 
 function AdminComplaints() {
@@ -143,11 +143,8 @@ function AdminComplaints() {
       }
     };
 
-  return (
-    <div className="dashboard-container">
-      <Sidebar />
-
-      <div className="main-content">
+return (
+  <DashboardLayout>
         <h2>Manage Complaints</h2>
 
         {loading ? (
@@ -353,8 +350,7 @@ function AdminComplaints() {
             )}
           </div>
         )}
-      </div>
-    </div>
+  </DashboardLayout>
   );
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAllUsers } from "../../services/adminService";
-import Sidebar from "../../components/Sidebar";
+import DashboardLayout from "../../layouts/DashboardLayout";
 import { toast } from "react-toastify";
 
 function AdminUsers() {
@@ -28,10 +28,7 @@ function AdminUsers() {
   };
 
   return (
-    <div className="dashboard-container">
-      <Sidebar />
-
-      <div className="main-content">
+<DashboardLayout>
         <h2>All Registered Users</h2>
 
         {loading ? (
@@ -63,8 +60,7 @@ function AdminUsers() {
             </table>
           </div>
         )}
-      </div>
-    </div>
+</DashboardLayout>
   );
 }
 

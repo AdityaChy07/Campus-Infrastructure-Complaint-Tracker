@@ -8,6 +8,8 @@ import complaintRoutes from "./routes/complaintRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import maintenanceRoutes from "./routes/maintenanceRoutes.js";
 import notificationRoutes from "./routes/notificationRoutes.js";
+import dashboardRoutes from "./routes/dashboardRoutes.js";
+
 
 dotenv.config();
 
@@ -26,6 +28,8 @@ app.use("/api/complaints", complaintRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/maintenance", maintenanceRoutes);
 app.use("/api/notifications", notificationRoutes);
+app.use("/api/dashboard", dashboardRoutes);
+
 
 // Test route
 app.get("/", (req, res) => {
