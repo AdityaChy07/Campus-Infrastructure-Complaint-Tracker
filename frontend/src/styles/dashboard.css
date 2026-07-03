@@ -606,3 +606,61 @@
 body.dark .complaint-card {
     background: #242424;
 }
+
+/* ==========================================
+   MODERN STAT CARD
+========================================== */
+
+.dashboard-stat-card {
+    background: var(--bg-card);
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: .3s ease;
+}
+
+.dashboard-stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.dashboard-stat-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.dashboard-stat-content {
+    flex: 1;
+}
+
+.dashboard-stat-content h4 {
+    color: var(--text-secondary);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dashboard-stat-content h2 {
+    margin-top: 6px;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.dashboard-stat-text {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #10b981;
+    font-weight: 600;
+}
