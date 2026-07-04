@@ -8,6 +8,29 @@
        LIGHT THEME
        ========================== */
 
+
+
+           --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --success:#10b981;
+    --danger:#ef4444;
+    --warning:#f59e0b;
+
+    --bg:#f5f7fb;
+    --card:#ffffff;
+
+    --text:#111827;
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    --radius:14px;
+
+    --shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    --transition:.3s ease;
     --bg-primary: #f8fafc;
     --bg-secondary: #ffffff;
     --bg-sidebar: #0f172a;
