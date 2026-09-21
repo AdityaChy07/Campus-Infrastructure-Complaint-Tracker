@@ -37,7 +37,7 @@ login(response.data);
 toast.success("Login Successful");
 
 if (response.data.role === "admin") {
-  navigate("/dashboard");
+  navigate("/admin/dashboard");
 } else if (response.data.role === "maintenance") {
   navigate("/maintenance/dashboard");
 } else {
